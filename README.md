@@ -8,7 +8,7 @@ ISA Extension for ASCON and SHA256 LWC Algorithms
 ## Introduction
 This project allows instruction set extension "zknh" for SHA256 algorithm and creates custom instructions for ASCON LWC algorithms. 
 
-### Files:
+## Files:
 - **ascon128av12:** ASCON encryption and decryption C program with spike simulation and results.
 - **asconhashav12:** ASCON hashing C program with spike simulation and results.
 - **gnu-toolchain-extension:** Necessary modifications to the toolchain for ASCON custom instructions.
@@ -16,7 +16,7 @@ This project allows instruction set extension "zknh" for SHA256 algorithm and cr
 - **spike-extension:** Necessary modifications to riscv-isa-sim for ASCON custom instructions.
 - **test:** C program for testing the simulation environment.
 
-### Building the Toolchain:
+## Building the Toolchain:
 Clone the gnu toolchain github repository, configure it accordingly and build it. For ASCON custom instructions, follow the steps on the gnu-toolchain-extension folder. Example:
 
 '''bash
@@ -28,7 +28,7 @@ make install
 $ riscv32-unknown-elf-gcc --version
 '''
 
-### Building the Simulator:
+## Building the Simulator:
 Clone riscv-isa-sim repository, configure it accordingly and build it. For ASCON custom instructions, follow the steps on the spike-extension folder. Example:
 
 '''bash
@@ -42,7 +42,7 @@ $ sudo make install
 $ ./spike
 '''
 
-### Building the Proxy Kernel (pk):
+## Building the Proxy Kernel (pk):
 RISC-V Proxy Kernel is cloned, installed, and configured so that it uses the current toolchain
 as the host. Example:
 
@@ -56,7 +56,7 @@ host=riscv32-unknown-elf
 make install
 '''
 
-### Running the simulation:
+## Running the simulation:
 - Open the file you want to simulate (ascon128av12, asconhashav12, sha-2)
 - Choose either the extension or normal simulation folder
 - Edit the pk path on run_sim.py accordingly to your environment.
