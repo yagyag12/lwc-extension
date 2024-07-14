@@ -1,0 +1,2 @@
+Input: Hello, ASCON!
+Hash: c15c5fa7a5c99a097120d92078e32f2d0c4d7c03a6519d3f22216b4fcbe4695f
