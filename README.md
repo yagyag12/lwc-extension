@@ -8,12 +8,13 @@ This project allows instruction set extension "zknh" for SHA256 algorithm and cr
 - **cv32e40s:** RISC-V CV32E40S processor modified for SHA256 instructions.
 - **lwcsim:** Simulation setup program.
 - **software:** Algorithm softwares for hardware simulation.
-- **tb:** Testbenches for certain modules inside the processor. 
+- **tb:** Testbenches for certain modules inside the processor.
+
 **isa-sim:**
 - **simulations:** C programs with spike simulation and results.  
-- - **ascon128av12:** ASCON encryption and decryption
-- - **asconhashav12:** ASCON hashing
-- - **sha-2:** SHA256
+  - **ascon128av12:** ASCON encryption and decryption
+  - **asconhashav12:** ASCON hashing
+  - **sha-2:** SHA256
 - **gnu-toolchain-extension:** Necessary modifications to the toolchain for ASCON custom instructions.
 - **spike-extension:** Necessary modifications to riscv-isa-sim for ASCON custom instructions.
 - **test:** C program for testing the simulation environment.
