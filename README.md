@@ -81,7 +81,7 @@ make linux
 ```
 
 ### Building the Simulator:
-Install Verilator, srecord and gtkwave programs fro simulation:
+Install Verilator, srecord and gtkwave programs for simulation:
 
 ```bash
 $ git clone https://github.com/verilator/verilator.git
